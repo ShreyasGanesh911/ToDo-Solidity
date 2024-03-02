@@ -31,8 +31,13 @@ export default function Task() {
     }
       const getTaskClick = async()=>{
         const data = await contract.getTask()
-        console.log(data[0])
-        setTask(data)
+        if(data.length !==0){
+          console.log(data[0])
+          setTask(data)
+        }
+        else
+        console.log("Looks like your tasks are empty")
+     
       }
     // const handleClick = async(e)=>{
     //     e.preventDefault()

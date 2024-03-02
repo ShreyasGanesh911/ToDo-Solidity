@@ -19,7 +19,8 @@ export const connectWallet = async()=>{
         return({success:false})
     }
 }
-const address = '0xFe5C5a23Aad27d3b808896746Cc6b474B924ad9E'
+//const address = '0xFe5C5a23Aad27d3b808896746Cc6b474B924ad9E'
+const address = '0x847C78325e9893EEC7543c1921F3b975bDB0a10b'
 export const  contractInfo = async()=>{
 try{
     const Provider = new ethers.BrowserProvider(window.ethereum)
